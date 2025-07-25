@@ -1,6 +1,6 @@
 /* Fonts Import */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 .noto-serif-heading {
   font-family: "Noto Serif", serif;
@@ -21,117 +21,166 @@
   padding: 0;
 }  */
 
-  /* shared styles */
-.heading{
+/* shared styles */
+.heading {
   font-size: 4rem;
-font-weight: 700;
-   margin: 0;
+  font-weight: 700;
+  margin: 0;
+}
+.sub-heading{
+    font-size: 3.1rem;
+  font-weight: 700;
+  margin: 0;
 }
 
-.paragraph{
+.paragraph {
   font-size: 1.3em;
-font-weight: 400;
-margin: 0;
+  font-weight: 400;
+  margin: 0;
 }
-  .color-grey {
-    color: rgba(0, 0, 0, 0.5);
-  }
+.color-grey {
+  color: rgba(0, 0, 0, 0.5);
+}
 
-  .color-orange {
-    color: rgb(233, 90, 8);
-  }
+.color-orange {
+  color: rgb(233, 90, 8);
+}
 
-  .default-layout {
-    /* padding: 0 9.3rem; */
-    max-width: 1140px;
-    margin: 0 auto;
-  }
+.default-layout {
+  /* padding: 0 9.3rem; */
+  max-width: 1140px;
+  margin: 0 auto;
+}
 
+.btn-primary{
+  background: rgb(233, 90, 8);
+  border: none;
+  padding: 15px 0px;
+  color: white;
 
-  /* navbar */
+}
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* navbar */
 
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
-
-  .cart{
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-
-
-  .nav-right ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .navbar .nav-right li,
-  a {
-    text-decoration: none;
-    list-style: none;
-    color: rgb(0, 0, 0);
-
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 400;
-  }
-
-
-  /* hero-page */
-.hero{
-  padding-top: 100px;        
+.navbar {
   display: flex;
-  justify-content:space-between;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
 
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
-.hero-left{
+
+.cart {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar .nav-right li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(0, 0, 0);
+
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* hero-page */
+.hero {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 120px;
+}
+.hero-left {
   text-align: left;
   max-width: 570px;
 }
 
+/* our-plants section */
 
-  
-
-
-  @media screen and (max-width:576px) {
-    .heading{
-  font-size: 1.5rem;
-font-weight: 700;
-   margin: 0;
+.plant-section-top{
+  text-align: center;
+  max-width: 888px;
+  margin: 0 auto 50px;
 }
 
-.paragraph{
-  font-size: 0.9rem;
-font-weight: 400;
-margin: 0;
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card img, button{
+  width: 100%;
 }
 
-.hero-right img{
-   max-width: 100%;
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  row-gap: 35px;
+  column-gap: 20px;
 }
 
-     .navbar .nav-right li:nth-child(1),.navbar .nav-right li:nth-child(2),.navbar .nav-right li:nth-child(3){
-      display: none;
-     }
+#card-special{
+  margin-bottom: -10px;
 
-     .hero{
-      flex-direction: column-reverse;
-      justify-content: flex-start;
-      align-items: flex-start;
-      gap: 10px;
-     }
-    /* .hero-right img{
-  width: fit-content;
-} */
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  .heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
   }
+  .sub-heading{
+    font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+  .paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .hero-right img {
+    max-width: 100%;
+  }
+
+  .navbar .nav-right li:nth-child(1),
+  .navbar .nav-right li:nth-child(2),
+  .navbar .nav-right li:nth-child(3) {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .card-container{
+  grid-template-columns: repeat(2,1fr);
+}
+}
