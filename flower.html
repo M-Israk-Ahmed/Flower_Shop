@@ -170,35 +170,35 @@
             </div>
         </section>
 
-    <footer>
+    <footer class="default-layout">
         <div class="footer-container">
             <div class="footer-left">
-                <img src="./assets/logo.png" alt="Faugei Logo" class="logo">
-                <p>Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+                <img src="./assets/logo.png" alt="Logo">
+                <p class="paragraph inter-paragraph color-grey">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
             </div>
 
-            <div class="footer-links">
-                <ul>
-                    <li><strong>Home</strong></li>
-                    <li>About Us</li>
-                    <li>Blog</li>
-                    <li>FAQ</li>
-                    <li>Contact Us</li>
+            <div class="footer-links ">
+                <ul class="array-1">
+                    <li><a class="f-link paragraph inter-paragraph color-grey" href="#">Home</a></li>
+                    <li><a class="f-link paragraph inter-paragraph color-grey" href="#">About Us</a></li>
+                    <li><a class="f-link paragraph inter-paragraph color-grey" href="#">Blog</a></li>
+                    <li><a class="f-link paragraph inter-paragraph color-grey" href="#">FAQ </a></li>
+                    <li><a class="f-link paragraph inter-paragraph color-grey" href="#">Contact Us</a></li>
                 </ul>
 
-                <ul>
-                    <li><strong>Features</strong></li>
-                    <li>Pricing</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms of Service</li>
-                    <li>Help Center</li>
+                <ul class="array-2">
+                    <li><a class="f-link paragraph inter-paragraph color-grey" href="#">Features</a></li>
+                    <li><a class="f-link paragraph inter-paragraph color-grey" href="#">Pricing</a></li>
+                    <li><a class="f-link paragraph inter-paragraph color-grey" href="#">Privacy Policy</a></li>
+                    <li><a class="f-link paragraph inter-paragraph color-grey" href="#">Terms of Service</a></li>
+                    <li><a class="f-link paragraph inter-paragraph color-grey" href="#">Help Center</a></li>
                 </ul>
 
-                <ul class="social-icons">
-                    <li><a href="#"><img src="./assets/linkedin.svg" alt="LinkedIn"></a></li>
-                    <li><a href="#"><img src="./assets/x.svg" alt="X"></a></li>
-                    <li><a href="#"><img src="./assets/facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="./assets/youtube.svg" alt="YouTube"></a></li>
+                <ul class="social-icons array-3">
+                    <li><a href="#"><img src="./assets//icon-linkedin.png" alt="LinkedIn"></a></li>
+                    <li><a href="#"><img src="./assets/icon-twitter.png" alt="X"></a></li>
+                    <li><a href="#"><img src="./assets/icon-facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="./assets/icon-youtube.png" alt="YouTube"></a></li>
                 </ul>
             </div>
         </div>
@@ -206,3 +206,46 @@
 </body>
 
 </html>
+
+.footer-container {
+  padding: 30px 0px;
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  gap: 100px;
+  /* max-width: 1440px; */
+}
+
+.footer-left {
+ /* max-width:360px; */
+}
+
+.footer-links {
+  /* display: flex; */
+  gap: 120px;
+  /* flex: 2 1 500px; */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-links ul {
+  list-style: none;
+  width: 120px;
+  /* padding: 0;
+  margin: 0; */
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.f-link{
+font-size: 1rem;
+}

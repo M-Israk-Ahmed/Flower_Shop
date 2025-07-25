@@ -273,6 +273,8 @@ background-image: linear-gradient(rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)),
   text-align: center;
   color: white;
    padding: 10rem   1rem;
+
+   margin-bottom: 50px;
 }
 
 .joinus-form {
@@ -299,6 +301,59 @@ background-image: linear-gradient(rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)),
   cursor: pointer;
   width: 30%;
 }
+
+/* footer */
+
+
+
+.footer-container{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+
+}
+
+.footer-links{
+  width: 70%;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.f-link{
+  font-size: 1rem;
+}
+
+
+.array-1, .array-2{
+  text-wrap: none;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  
+}
+.array-3{
+  display: flex;
+  gap: 15px;
+}
+
+.array-1, .array-2, .array-3{
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* .footer-links ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+} */
 
 @media screen and (max-width: 576px) {
   .heading {
@@ -356,5 +411,14 @@ background-image: linear-gradient(rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)),
   ;
   gap: 10px;
 }
+.footer-container, .footer-links{
+  flex-direction: column;
+  gap: 30px;
+
+}
+.array-1, .array-2, .array-3{
+  gap: 30px;
+}
+
 
 }
