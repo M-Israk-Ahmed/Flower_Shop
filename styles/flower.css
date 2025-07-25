@@ -140,10 +140,165 @@ a {
   margin-bottom: -10px;
 
 }
+.flower-plants{
 
 
+  margin-top: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.flower-plants-right{
+max-width: 540px;
+}
+.flower-plants img{
+
+width: 100%;
+}
+
+.flower-plants-left {
+  position: relative;        
+  width: 100%;
+  max-width: 500px;         
+}
 
 
+#badge{
+  width: 280px;
+  position: absolute;
+  top: -130px;
+  left: 300px;
+ filter: drop-shadow(10px 0.8px 0px rgba(0, 0, 0, 0.25));
+}
+
+/* deals */
+
+.deals{
+  margin-top: 120px;
+}
+
+.deals-top{
+    text-align: center;
+  max-width: 888px;
+  margin: 0 auto 80px;
+}
+
+
+.deals-grid{
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2,215px);
+  grid-template-areas: 
+  'left right'
+  'left2 right'
+  ;
+  gap: 10px;
+
+  margin-bottom: 100px;
+}
+
+#left{
+  background-image: url("../assets/deal-ana.png");
+  width: 100%;
+  background-size:cover;
+  background-position: center;
+  grid-area: left;
+}
+#left2{
+    background-image: url("../assets/deal-bloom.png");
+  background-size: cover;
+  background-position: center;
+  grid-area: left2;
+}
+#right{
+    background-image: url("../assets/deal-zabo.png");
+  background-size:cover;
+  background-position: center;
+  grid-area: right;
+}
+
+.promo-card{
+  
+  border-radius: 12px;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-overlay{
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  padding: 30px     ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-shop-now {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+
+.discount {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.special-discount{
+    font-size: 2rem;
+  font-weight: 500;
+}
+
+/* join us */
+/* .joinus{
+margin: 0;
+padding: 0;
+} */
+
+.joinus-container{
+background-image: linear-gradient(rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)), 
+                  url("../assets/news-letter-bg.png");
+  background-size:cover;
+  width: 100%;
+  background-position: center;
+  text-align: center;
+  color: white;
+   padding: 10rem   1rem;
+}
+
+.joinus-form {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  margin: 0 auto;
+
+  background: white;
+}
+.joinus-form input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  font-size: 1rem;
+
+}
+.joinus-form button {
+  background-color: #f26522;
+  color: white;
+  border: none;
+  padding: 0 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 30%;
+}
 
 @media screen and (max-width: 576px) {
   .heading {
@@ -179,8 +334,27 @@ a {
     align-items: flex-start;
     gap: 10px;
   }
+  .flower-plants{
+    flex-direction: column;
+  }
 
   .card-container{
   grid-template-columns: repeat(2,1fr);
 }
+#badge{
+  display: none;
+}
+
+.deals-grid{
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-areas: 
+  'left'
+  'left2'
+  'right'
+  ;
+  gap: 10px;
+}
+
 }
